@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page">
+    <meta name="author" content="Roberto Uriona">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course-list.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <a class="site-brand" href="index.html">
+                <img src="images/site-logo.svg" alt="" width="48" height="48">
+                <span>Roberto Uriona</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="primary-nav">
+                <span class="hamburger-icon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+        </div>
+        <nav id="primary-nav" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="chamber-project.html">Chamber</a>
+            <a href="final-project.html">Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="intro-grid">
+            <section>
+                <h2>About Me</h2>
+                <p>Hi! I'm Roberto Uriona, from Cochabamba, Bolivia. I love spending time with my family and playing
+                    sports. I currently work as an automated quality assurance engineer, where I enjoy making sure
+                    software works as well as it should. In my free time, I like going on road trips and taking in
+                    the landscapes of my country and neighboring countries. To me, the best trip is one taken
+                    slowly, with good music and plenty of curiosity.</p>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/roberto-uriona.jpg" alt="Roberto Uriona's Picture">
+            </section>
+        </div>
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-filters">
+                <button type="button" data-filter="ALL" aria-pressed="true">All</button>
+                <button type="button" data-filter="CSE" aria-pressed="false">CSE</button>
+                <button type="button" data-filter="WDD" aria-pressed="false">WDD</button>
+            </div>
+            <div class="course-list"></div>
+            <p>The total credits for courses listed above is <span id="credit-total"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/roberto-uriona-198164230/" target="_blank"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/ruriona19" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="https://x.com/robb_1906" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Roberto Uriona - Bolivia</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

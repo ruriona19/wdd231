@@ -1,0 +1,303 @@
+/* Global base: colors, typography, and dimensions */
+:root {
+    --color-text: #20282b;
+    --color-page: #ffffff;
+    --color-surface: #e8eeed;
+    --color-surface-dark: #a4e5da;
+    --color-primary: #18514d;
+    --color-primary-dark: #092c29;
+}
+
+body {
+    margin: 0;
+    color: var(--color-text);
+    background: var(--color-page);
+    font-family: "Source Sans 3", sans-serif;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header: brand, hamburger button, and navigation */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-brand img {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+}
+
+.menu-toggle {
+    display: grid;
+    min-width: 44px;
+    min-height: 44px;
+    place-items: center;
+    border: 0;
+    background: var(--color-primary);
+    color: white;
+}
+
+.hamburger-icon {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 18px;
+}
+
+.hamburger-icon span {
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: currentColor;
+    transition: top 160ms ease, transform 160ms ease, opacity 160ms ease;
+}
+
+.hamburger-icon span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger-icon span:nth-child(2) {
+    top: 8px;
+}
+
+.hamburger-icon span:nth-child(3) {
+    top: 16px;
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger-icon span:nth-child(1) {
+    top: 8px;
+    transform: rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger-icon span:nth-child(3) {
+    top: 8px;
+    transform: rotate(-45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hamburger-icon span {
+        transition: none;
+    }
+}
+
+/* Header navigation */
+header nav {
+    background: var(--color-primary-dark);
+}
+
+header nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 150ms ease;
+}
+
+header nav a:hover,
+header nav a:focus-visible,
+header nav a[aria-current="page"] {
+    background-color: var(--color-primary);
+}
+
+header nav a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: -3px;
+}
+
+.js #primary-nav:not(.is-open) {
+    display: none;
+}
+
+#primary-nav.is-open {
+    display: grid;
+}
+
+/* Main: page content and title */
+main {
+    padding: 1rem;
+}
+
+main>h1 {
+    margin: 0 0 0.75rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+/* Panels: About Me and Student Photo */
+.intro-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.intro-grid section {
+    min-width: 0;
+}
+
+.intro-grid section,
+.courses-section {
+    border: 1px solid var(--color-primary-dark);
+    background: var(--color-surface);
+}
+
+.intro-grid section h2,
+.courses-section h2 {
+    margin: 0;
+    padding: 0.65rem 0.8rem;
+    background: var(--color-primary-dark);
+    color: white;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.intro-grid section p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.intro-grid section img {
+    margin: 1rem auto;
+}
+
+/* Courses: filters, list, and cards */
+.courses-section {
+    margin-top: 1.5rem;
+}
+
+.courses-section>p {
+    margin: 0.75rem;
+    text-align: center;
+}
+
+.course-filters {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+    margin: 0.75rem;
+}
+
+.course-filters button {
+    min-width: 0;
+    min-height: 44px;
+    padding: 0.45rem;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 0.25rem;
+    background: var(--color-page);
+    color: var(--color-text);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 150ms ease, color 150ms ease;
+}
+
+.course-filters button:hover {
+    text-decoration: underline;
+}
+
+.course-filters button:focus-visible {
+    outline: 3px solid var(--color-primary-dark);
+    outline-offset: 2px;
+}
+
+.course-filters button[aria-pressed="true"] {
+    background: var(--color-primary);
+    color: white;
+}
+
+.course-list {
+    display: grid;
+    gap: 0.5rem;
+    padding: 0 0.75rem;
+}
+
+.course-card {
+    display: grid;
+    min-width: 0;
+    min-height: 2.5rem;
+    place-items: center;
+    padding: 0.45rem;
+    border: 1px solid var(--color-primary-dark);
+    background: var(--color-page);
+    text-align: center;
+}
+
+.course-card h4,
+.course-card p {
+    margin: 0;
+}
+
+.course-status {
+    font-size: small;
+}
+
+.course-card.is-completed {
+    border-left: 5px solid var(--color-primary);
+    background: var(--color-surface-dark);
+}
+
+.course-card.is-completed .course-status {
+    color: var(--color-primary-dark);
+    font-weight: 700;
+}
+
+/* Footer: social links and details */
+footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top: 1px solid #c5cfcd;
+    background: var(--color-surface);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.social a {
+    display: grid;
+    min-width: 44px;
+    min-height: 44px;
+    place-items: center;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
