@@ -1,0 +1,76 @@
+{
+    "companies": [
+        {
+            "name": "Idaho Websites",
+            "address": "2115 S Vista Avenue Boise ID 83705",
+            "phone": "(208) 342-9386",
+            "url": "https://idahowebsites.com/",
+            "membership": "Gold",
+            "imagePath": "images/companies/idWeb.png"
+        },
+        {
+            "name": "Surge Web Design",
+            "address": "4072 E Arch Drive Meridian ID 83646",
+            "phone": "(208) 631-0640",
+            "url": "https://www.surgewebdesign.com/",
+            "membership": "Silver",
+            "imagePath": "images/companies/surgeWebDesign.png"
+        },
+        {
+            "name": "Graphic Zen",
+            "address": "1788 E Summerplace Court Meridiam ID",
+            "phone": "(208) 631-4984",
+            "url": "https://graphiczen.com/",
+            "membership": "Bronze",
+            "imagePath": "images/companies/graphiczen.png"
+        },
+        {
+            "name": "Peppershock Media",
+            "address": "1255 3rd Street Nampa ID 83651",
+            "phone": "(208) 461-5070",
+            "url": "https://www.peppershock.com/",
+            "membership": "Gold",
+            "imagePath": "images/companies/peppershockMedia.png"
+        },
+        {
+            "name": "Flash Teck Services",
+            "address": "Star Idaho 83669",
+            "phone": "(208) 488-5810",
+            "url": "https://flashtechnicalservices.com/",
+            "membership": "Silver",
+            "imagePath": "images/companies/flashTech.png"
+        },
+        {
+            "name": "Metro Express Car Wash, LLC",
+            "address": "1725 E Overland Road Meridian ID 83642",
+            "phone": "(208) 342-9386",
+            "url": "https://www.metroexpresscarwash.com/",
+            "membership": "Silver",
+            "imagePath": "images/companies/metroExpress.png"
+        },
+        {
+            "name": "Apple",
+            "address": "10500 N De Anza Blvd",
+            "phone": "(408) 996-1010",
+            "url": "https://apple.com/",
+            "membership": "Gold",
+            "imagePath": "images/companies/apple.png"
+        },
+        {
+            "name": "Amazon",
+            "address": "410 Terry Ave N, Seattle VA",
+            "phone": "(208) 342-9386",
+            "url": "https://amazon.com/",
+            "membership": "Gold",
+            "imagePath": "images/companies/amazon.png"
+        },
+        {
+            "name": "Deseret Book",
+            "address": "2115 S Vista Avenue Boise ID 83705",
+            "phone": "(480) 962-2170",
+            "url": "https://deseretbook.com/",
+            "membership": "Gold",
+            "imagePath": "images/companies/deseretBook.png"
+        }
+    ]
+}
