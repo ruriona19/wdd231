@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the Cochabamba Chamber of Commerce directory to discover local businesses, services, and contact information.">
+    <meta property="og:title" content="Cochabamba Chamber of Commerce | Business Directory">
+    <meta property="og:description"
+        content="Explore local businesses and services in the Cochabamba Chamber of Commerce directory.">
+    <meta property="og:image" content="https://ruriona19.github.io/wdd231/chamber/images/favicon.ico">
+    <meta property="og:url" content="https://ruriona19.github.io/wdd231/chamber/directory.html">
+    <title>Directory Page | Cochabamba Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p class="announcement">
+            Chamber networking event Wednesday, 7:00 p.m.
+        </p>
+        <div class="header-content">
+            <a class="brand" href="index.html">
+                <img src="images/favicon.ico" alt="">
+                <span class="brand-text">
+                    <span class="brand-name">Cochabamba</span>
+                    <span>Chamber of Commerce</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-open" aria-hidden="true">☰</span>
+                <span class="menu-close" aria-hidden="true">×</span>
+                <span class="visually-hidden">Open navigation</span>
+            </button>
+
+            <nav id="primary-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html" aria-current="page">Directory</a>
+                <a href="discover.html">Discover</a>
+                <a href="join.html">Join</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Members Directory</h1>
+        <p>Explore local businesses and Chamber members.</p>
+        <div class="directory-controls" role="group" aria-label="Directory display options">
+            <button type="button" data-view="grid" aria-pressed="true">Grid</button>
+            <button type="button" data-view="list" aria-pressed="false">List</button>
+        </div>
+        <div class="members-grid"></div>
+    </main>
+    <footer class="site-footer">
+        <div>
+            <h2>Cochabamba Chamber of Commerce</h2>
+            <address>
+                Heroinas Av. #777<br>
+                Cochabamba, Bolivia<br>
+                <a href="mailto:info@example.org">info@example.org</a><br>
+                <a href="tel:+59172256544">+(591) 722-56544</a>
+            </address>
+        </div>
+
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Cochabamba Chamber of Commerce' Facebook">
+                <img src="images/facebook.svg">
+            </a>
+            <a href="https://linkeding.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Cochabamba Chamber of Commerce' LinkedIn">
+                <img src="images/linkedin.svg">
+            </a>
+        </div>
+
+        <div>
+            <p>WDD 231 Project</p>
+            <p>Roberto Uriona</p>
+            <p>&copy; <span id="current-year"></span> Cochabamba Chamber of Commerce</p>
+            <p>Last modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

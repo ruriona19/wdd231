@@ -1,0 +1,15 @@
+@media (min-width: 700px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    #primary-nav {
+        display: flex;
+        flex-basis: auto;
+        gap: 0.25rem;
+    }
+
+    #primary-nav a {
+        display: inline-block;
+    }
+}
