@@ -1,3 +1,14 @@
+:root {
+    --color-primary: #013c6f;
+    --color-secondary: #001f33;
+    --color-accent: #00b4d8;
+    --color-accent-light: #caf0f8;
+    --color-background: #e4f1f8;
+    --color-white: #ffffff;
+
+    --color-text: var(--color-secondary);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,16 +16,16 @@
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
-    color: #183746;
-    background: #f5fbfd;
+    color: var(--color-text);
+    background: var(--color-background);
 }
 
 /* header */
 .announcement {
     margin: 0;
     padding: 0.6rem 1rem;
-    color: #023c5b;
-    background: #e4f1f8;
+    color: var(--color-secondary);
+    background: var(--color-background);
     text-align: center;
 }
 
@@ -25,8 +36,8 @@ body {
     gap: 1rem;
     padding: 1rem;
     flex-wrap: wrap;
-    background-color: #0077b6;
-    color: #ffffff;
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .brand {
@@ -59,8 +70,8 @@ body {
 .menu-toggle {
     padding: 0.5rem;
     border: 0;
-    color: white;
-    background: #023c5b;
+    color: var(--color-white);
+    background: var(--color-secondary);
     font-size: 1.5rem;
 }
 
@@ -80,7 +91,7 @@ body {
 #primary-nav a {
     display: block;
     padding: 0.7rem;
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
 }
 
@@ -91,7 +102,7 @@ body {
 }
 
 #primary-nav a[aria-current="page"] {
-    background: #023c5b;
+    background: var(--color-secondary);
 }
 
 #primary-nav.is-open {
@@ -127,15 +138,15 @@ main {
 .directory-controls button {
     min-width: 5.5rem;
     padding: 0.6rem 1rem;
-    border: 1px solid #023c5b;
-    background: #ffffff;
-    color: #023c5b;
+    border: 1px solid var(--color-secondary);
+    background: var(--color-white);
+    color: var(--color-secondary);
     cursor: pointer;
 }
 
 .directory-controls button[aria-pressed="true"] {
-    background: #0077b6;
-    color: #ffffff;
+    background: var(--color-primary);
+    color: var(--color-white);
 }
 
 .members-grid {
@@ -150,16 +161,16 @@ main {
     gap: 0.5rem 0.75rem;
     align-items: center;
     padding: 1rem;
-    border: 1px solid #0077b6;
+    border: 1px solid var(--color-primary);
     border-radius: 0.5rem;
-    background: #e4f1f8;
+    background: var(--color-background);
     overflow-wrap: anywhere;
 }
 
 .member-card h2 {
     grid-column: 1 / -1;
     margin: 0;
-    color: #023c5b;
+    color: var(--color-secondary);
     text-align: center;
     font-size: 1.15rem;
 }
@@ -170,7 +181,7 @@ main {
     width: 76px;
     height: 67px;
     object-fit: contain;
-    background: #ffffff;
+    background: var(--color-white);
 }
 
 .member-card p {
@@ -193,11 +204,11 @@ main {
     padding: 1rem;
     /* border: 0;
     border-radius: 0; */
-    background: #e4f1f8;
+    background: var(--color-background);
 }
 
 .members-grid.list-view .member-card:nth-child(even) {
-    background: #ffffff;
+    background: var(--color-white);
 }
 
 .members-grid.list-view .member-name {
@@ -246,7 +257,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
     gap: 0.75rem;
     padding: 1rem;
-    background: #e4f1f8;
+    background: var(--color-background);
 }
 
 .footer-content {
