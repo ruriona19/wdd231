@@ -7,7 +7,9 @@
             "url": "https://idahowebsites.com/",
             "membership": "Gold",
             "yearFounded": 1990,
-            "imagePath": "images/companies/idWeb.webp"
+            "imagePath": "images/companies/idWeb.webp",
+            "imageWidth": 152,
+            "imageHeight": 106
         },
         {
             "name": "Surge Web Design",
@@ -16,7 +18,9 @@
             "url": "https://www.surgewebdesign.com/",
             "membership": "Silver",
             "yearFounded": 1999,
-            "imagePath": "images/companies/surgeWebDesign.webp"
+            "imagePath": "images/companies/surgeWebDesign.webp",
+            "imageWidth": 135,
+            "imageHeight": 134
         },
         {
             "name": "Graphic Zen",
@@ -25,7 +29,9 @@
             "url": "https://graphiczen.com/",
             "membership": "Bronze",
             "yearFounded": 2001,
-            "imagePath": "images/companies/graphiczen.webp"
+            "imagePath": "images/companies/graphiczen.webp",
+            "imageWidth": 134,
+            "imageHeight": 134
         },
         {
             "name": "Peppershock Media",
@@ -34,7 +40,9 @@
             "url": "https://www.peppershock.com/",
             "membership": "Gold",
             "yearFounded": 2010,
-            "imagePath": "images/companies/peppershockMedia.webp"
+            "imagePath": "images/companies/peppershockMedia.webp",
+            "imageWidth": 134,
+            "imageHeight": 134
         },
         {
             "name": "Flash Teck Services",
@@ -43,7 +51,9 @@
             "url": "https://flashtechnicalservices.com/",
             "membership": "Silver",
             "yearFounded": 2015,
-            "imagePath": "images/companies/flashTech.webp"
+            "imagePath": "images/companies/flashTech.webp",
+            "imageWidth": 152,
+            "imageHeight": 58
         },
         {
             "name": "Metro Express Car Wash, LLC",
@@ -52,7 +62,9 @@
             "url": "https://www.metroexpresscarwash.com/",
             "membership": "Silver",
             "yearFounded": 2008,
-            "imagePath": "images/companies/metroExpress.webp"
+            "imagePath": "images/companies/metroExpress.webp",
+            "imageWidth": 152,
+            "imageHeight": 102
         },
         {
             "name": "Apple",
@@ -61,7 +73,9 @@
             "url": "https://apple.com/",
             "membership": "Gold",
             "yearFounded": 1981,
-            "imagePath": "images/companies/apple.webp"
+            "imagePath": "images/companies/apple.webp",
+            "imageWidth": 152,
+            "imageHeight": 115
         },
         {
             "name": "Amazon",
@@ -70,7 +84,9 @@
             "url": "https://amazon.com/",
             "membership": "Gold",
             "yearFounded": 2001,
-            "imagePath": "images/companies/amazon.webp"
+            "imagePath": "images/companies/amazon.webp",
+            "imageWidth": 152,
+            "imageHeight": 133
         },
         {
             "name": "Deseret Book",
@@ -79,7 +95,9 @@
             "url": "https://deseretbook.com/",
             "membership": "Gold",
             "yearFounded": 2010,
-            "imagePath": "images/companies/deseretBook.webp"
+            "imagePath": "images/companies/deseretBook.webp",
+            "imageWidth": 135,
+            "imageHeight": 134
         }
     ]
 }
