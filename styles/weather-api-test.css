@@ -1,0 +1,86 @@
+:root {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #172b4d;
+    background: #eaf3f8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 3rem 1rem 1.5rem;
+    background: #102d4f;
+}
+
+header, main, footer {
+    width: min(100%, 42rem);
+    margin-inline: auto;
+}
+
+header {
+    margin-bottom: 1.75rem;
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding:2rem;
+    border-radius: 0.5rem;
+    background: white;
+    text-align: center;
+}
+
+main>p {
+    color: #52657d;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#current-temp {
+    display: block;
+    margin-top: 0.75rem;
+}
+
+#current-temp strong {
+    color: #123b5d;
+    font-size: clamp(4rem, 12vw, 7rem);
+    line-height: 1;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0 0;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background: #48607c;
+}
+
+#weather-icon {
+    width: 5.5rem;
+    height: 5.5rem;
+    object-fit: contain;
+}
+
+figcaption {
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+@media (max-width: 30rem) {
+    main {
+        padding: 1.5rem;
+    }
+
+    figure {
+        flex-direction: column;
+    }
+}
