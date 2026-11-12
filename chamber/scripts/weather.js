@@ -1,6 +1,6 @@
 const currentTemp = document.getElementById('current-temp');
-const weatherIcon = document.getElementById('weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const weatherFigure = document.querySelector(".weather-condition");
+const captionDesc = weatherFigure.querySelector("figcaption");
 const myLat = -17.34809;
 const myLon = -66.1895;
 const apiKey = "4805fb3c9a3f5182f4b8f3fa6d5faa4d";
@@ -41,8 +41,12 @@ function displayCurrentResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}&deg;C</strong>`;
     const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
     const desc = weatherData.weather[0].description;
-    weatherIcon.src = iconsrc;
-    weatherIcon.alt = desc;
+    const icon = document.createElement("img");
+    icon.id = "weather-icon";
+    icon.src = iconsrc;
+    icon.alt = ""; // The figcaption already describes the weather.
+
+    weatherFigure.replaceChildren(icon, captionDesc);
     captionDesc.textContent = desc;
 }
 

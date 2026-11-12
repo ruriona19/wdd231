@@ -334,10 +334,6 @@ main {
     gap: 1rem;
 }
 
-.home-weather {
-    grid-area: weather;
-}
-
 .home-spotlights {
     display: grid;
     align-content: start;
@@ -429,6 +425,7 @@ main {
 /* weather section  */
 
 .home-weather {
+    grid-area: weather;
     display: grid;
     align-content: start;
     border-radius: 0.75rem;
