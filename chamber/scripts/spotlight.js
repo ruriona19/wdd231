@@ -20,11 +20,10 @@ function createSpotlightCard(member) {
 
     const logo = document.createElement("img");
     logo.className = "spotlight-logo";
-    logo.src = member.imagePath;
-    logo.alt = `${member.name} logo`;
-    logo.loading = "lazy";
     logo.width = member.imageWidth;
     logo.height = member.imageHeight;
+    logo.alt = `${member.name} logo`;
+    logo.src = member.imagePath;
 
     const name = document.createElement("h3");
     name.textContent = member.name;
