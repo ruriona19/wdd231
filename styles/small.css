@@ -185,6 +185,7 @@ main>h1 {
 
 .intro-grid section img {
     margin: 1rem auto;
+    max-width: 40%;
 }
 
 /* Courses: filters, list, and cards */
@@ -266,6 +267,30 @@ main>h1 {
 .course-card.is-completed .course-status {
     color: var(--color-primary-dark);
     font-weight: 700;
+}
+
+/* Dialog */
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
 }
 
 /* Footer: social links and details */

@@ -2,6 +2,7 @@
 const courseContainer = document.querySelector(".course-list");
 const creditTotal = document.getElementById("credit-total");
 const filterButtons = document.querySelectorAll(".course-filters button");
+const courseDetails = document.getElementById("course-details");
 
 // Display all courses or only those matching the selected filter.
 function renderCourses(filter = "ALL") {
@@ -11,20 +12,24 @@ function renderCourses(filter = "ALL") {
 
     visibleCourses.forEach((course) => {
         // Create a course card and add the course title as text.
-        const card = document.createElement("article");
+        const card = document.createElement("button");
+        card.type = "button";
         card.classList.add("course-card");
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
 
         if (course.status === "completed") {
             card.classList.add("is-completed");
         }
 
-        const subject = document.createElement("h4");
-        subject.textContent = `${course.subject} ${course.number}`
+        const subject = document.createElement("span");
+        subject.textContent = `${course.subject} ${course.number}`;
 
-        const title = document.createElement("p");
-        title.textContent = `${course.title}`;
+        const title = document.createElement("span");
+        title.textContent = course.title;
 
-        const status = document.createElement("p");
+        const status = document.createElement("span");
         status.classList.add("course-status");
         status.textContent =
             course.status === "completed" ? "Completed" :
@@ -59,3 +64,28 @@ filterButtons.forEach((button) => {
 
 // Render all courses when the page loads.
 renderCourses();
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+    <button id="closeModal" type="button" aria-label="Close">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificates:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+    `
+    courseDetails.showModal();
+
+    const closeButton = courseDetails.querySelector("#closeModal");
+    closeButton.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+// Close the modal when the user clicks outside of it (on the backdrop)
+courseDetails.addEventListener("click", (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
