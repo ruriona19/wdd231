@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roberto Uriona">
+    <meta name="description"
+        content="Explore the Cochabamba Chamber of Commerce directory to discover local businesses, services, and contact information.">
+    <meta property="og:title" content="Cochabamba Chamber of Commerce | Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Explore local businesses and services in the Cochabamba Chamber of Commerce directory.">
+    <meta property="og:image" content="https://ruriona19.github.io/wdd231/chamber/images/cochabamba-city.jpeg">
+    <meta property="og:url" content="https://ruriona19.github.io/wdd231/chamber/index.html">
+    <title>Join | Chamber Project</title>
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/membership.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p class="announcement">
+            Chamber networking event Wednesday, 7:00 p.m.
+        </p>
+        <div class="header-content">
+            <a class="brand" href="index.html">
+                <img src="images/favicon.ico" alt="">
+                <span class="brand-text">
+                    <span class="brand-name">Cochabamba</span>
+                    <span>Chamber of Commerce</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-open" aria-hidden="true">☰</span>
+                <span class="menu-close" aria-hidden="true">×</span>
+                <span class="visually-hidden">Open navigation</span>
+            </button>
+
+            <nav id="primary-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="discover.html">Discover</a>
+                <a href="join.html">Join</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="membership-section confirmation" aria-labelledby="thank-you-heading">
+            <h1 id="thank-you-heading">Thank you for applying!</h1>
+
+            <p id="application-message">
+                Here are the details submitted with your application:
+            </p>
+
+            <dl class="application-details" id="application-details" hidden>
+                <div>
+                    <dt>First name</dt>
+                    <dd id="first-name-output"></dd>
+                </div>
+                <div>
+                    <dt>Last name</dt>
+                    <dd id="last-name-output"></dd>
+                </div>
+                <div>
+                    <dt>Email</dt>
+                    <dd id="email-output"></dd>
+                </div>
+                <div>
+                    <dt>Mobile number</dt>
+                    <dd id="phone-output"></dd>
+                </div>
+                <div>
+                    <dt>Business name</dt>
+                    <dd id="organization-output"></dd>
+                </div>
+                <div>
+                    <dt>Application date</dt>
+                    <dd id="timestamp-output"></dd>
+                </div>
+            </dl>
+
+            <a href="index.html">Return to the home page</a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <h2>Cochabamba Chamber of Commerce</h2>
+                <address>
+                    Heroinas Av. #777<br>
+                    Cochabamba, Bolivia<br>
+                    <a href="mailto:info@example.org">info@example.org</a><br>
+                    <a href="tel:+59172256544">+(591) 722-56544</a>
+                </address>
+            </div>
+
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Cochabamba Chamber of Commerce' Facebook">
+                    <img src="images/facebook.svg" alt="Visit us on Facebook">
+                </a>
+                <a href="https://linkeding.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Cochabamba Chamber of Commerce' LinkedIn">
+                    <img src="images/linkedin.svg" alt="Visit us on LinkedIn">
+                </a>
+            </div>
+
+            <div>
+                <p>WDD 231 Project</p>
+                <p>Roberto Uriona</p>
+                <p>&copy; <span id="current-year"></span> Cochabamba Chamber of Commerce</p>
+                <p>Last modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
