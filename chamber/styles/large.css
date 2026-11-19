@@ -59,4 +59,9 @@
         grid-template-columns: minmax(14rem, 0.9fr) minmax(0, 2fr) minmax(15rem, 0.9fr);
         column-gap: 1rem;
     }
+
+    .join-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(16rem, 1fr);
+        align-items: start;
+    }
 }
