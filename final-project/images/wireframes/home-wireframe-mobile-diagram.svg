@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 1660" role="img" aria-labelledby="title description">
+  <title id="title">Mobile home page wireframe diagram — Corani Trout Restaurant</title>
+  <desc id="description">
+    Diagram-style mobile wireframe using labeled boxes for the compact header,
+    hero, introduction, featured dish, visit information, map, and WhatsApp action.
+  </desc>
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      fill: #263a2d;
+    }
+
+    .canvas-title {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .copy {
+      font-size: 14px;
+    }
+
+    .small {
+      font-size: 11px;
+    }
+
+    .strong {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .frame {
+      fill: #fff;
+      stroke: #334155;
+      stroke-width: 2;
+    }
+
+    .component {
+      fill: #fff;
+      stroke: #647568;
+      stroke-width: 1.5;
+    }
+
+    .photo {
+      fill: #edf2eb;
+      stroke: #647568;
+      stroke-width: 1.5;
+      stroke-dasharray: 6 4;
+    }
+
+    .rule {
+      stroke: #647568;
+      stroke-width: 1.5;
+    }
+  </style>
+
+  <rect width="480" height="1660" fill="#fff" />
+  <text x="26" y="32" class="canvas-title">HOME PAGE / MOBILE WIREFRAME</text>
+
+  <rect x="73" y="52" width="334" height="1585" rx="38" class="frame" />
+  <rect x="84" y="64" width="312" height="1560" rx="29" fill="#fff" stroke="#647568" stroke-width="1.5" />
+  <rect x="184" y="72" width="112" height="9" rx="5" fill="#d8dfd8" />
+
+  <g aria-label="Mobile header region">
+    <rect x="96" y="96" width="288" height="66" class="component" />
+    <circle cx="117" cy="125" r="10" fill="#edf2eb" stroke="#334155" stroke-width="1.5" />
+    <text x="136" y="123" class="section-label">CORANI TROUT</text>
+    <text x="136" y="142" class="small">Restaurant logo</text>
+    <path d="M348 117h20m-20 8h20m-20 8h20" class="rule" />
+    <text x="96" y="181" class="small">Compact header / menu icon</text>
+  </g>
+
+  <g aria-label="Mobile hero region">
+    <rect x="96" y="194" width="288" height="298" class="component" />
+    <rect x="108" y="206" width="264" height="92" class="photo" />
+    <path d="M108 206l264 92m0-92-264 92" class="rule" />
+    <text x="240" y="253" text-anchor="middle" class="small">Landscape / hero image</text>
+    <text x="111" y="325" class="section-label">A TASTE OF THE ANDES</text>
+    <text x="111" y="359" class="strong">Fresh trout.</text>
+    <text x="111" y="383" class="copy">Unforgettable views.</text>
+    <text x="111" y="408" class="small">Laguna Corani, Cochabamba</text>
+    <rect x="111" y="426" width="258" height="48" fill="#e8efe3" stroke="#334155" stroke-width="1.5" />
+    <text x="240" y="455" text-anchor="middle" class="copy">Explore the menu</text>
+  </g>
+
+  <g aria-label="Mobile restaurant introduction">
+    <rect x="96" y="510" width="288" height="145" class="component" />
+    <text x="111" y="535" class="section-label">RESTAURANT INTRODUCTION</text>
+    <text x="111" y="566" class="strong">Local flavor, naturally.</text>
+    <text x="111" y="592" class="small">Short text about locally farmed trout</text>
+    <text x="111" y="610" class="small">and the Laguna Corani setting.</text>
+    <text x="111" y="640" class="small">Stacked content on mobile</text>
+  </g>
+
+  <g aria-label="Featured dish card">
+    <rect x="96" y="673" width="288" height="353" class="component" />
+    <text x="111" y="698" class="section-label">FEATURED MENU ITEM</text>
+    <rect x="111" y="711" width="258" height="112" class="photo" />
+    <path d="M111 711l258 112m0-112L111 823" class="rule" />
+    <text x="240" y="770" text-anchor="middle" class="small">Dish photo</text>
+    <text x="111" y="850" class="section-label">FRESH FROM THE KITCHEN</text>
+    <text x="111" y="884" class="strong">Trout with garlic</text>
+    <text x="111" y="910" class="small">Description / estimated price</text>
+    <rect x="111" y="932" width="258" height="42" class="component" />
+    <text x="240" y="958" text-anchor="middle" class="small">Link: see full menu</text>
+    <text x="111" y="1004" class="small">Featured dish card</text>
+  </g>
+
+  <g aria-label="Mobile visit information">
+    <rect x="96" y="1044" width="288" height="272" class="component" />
+    <text x="111" y="1077" class="strong">Planning a visit?</text>
+    <text x="111" y="1105" class="small">Hours · Directions · Parking</text>
+    <rect x="111" y="1122" width="258" height="126" class="photo" />
+    <path d="M111 1122l258 126m0-126-258 126" class="rule" />
+    <text x="240" y="1188" text-anchor="middle" class="small">Map preview</text>
+    <text x="111" y="1280" class="small">Directions from National Route 4</text>
+    <text x="111" y="1299" class="small">and confirmed business hours</text>
+  </g>
+
+  <g aria-label="WhatsApp contact action">
+    <rect x="96" y="1334" width="288" height="72" fill="#e8efe3" stroke="#334155" stroke-width="1.5" />
+    <text x="240" y="1377" text-anchor="middle" class="copy">WhatsApp · Ask or reserve</text>
+  </g>
+
+  <g aria-label="Mobile footer">
+    <rect x="96" y="1424" width="288" height="80" class="component" />
+    <text x="111" y="1455" class="section-label">FOOTER</text>
+    <text x="111" y="1480" class="small">Restaurant name / contact / links</text>
+  </g>
+</svg>
