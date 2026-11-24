@@ -97,7 +97,8 @@
 
                 <label for="membership">
                     Membership level
-                    <select id="membership" name="membership" required>
+                    <select id="membership" name="membership" title="Choose a membership level" autocomplete="off"
+                        required>
                         <option value="" disabled selected>Select a membership level</option>
                         <option value="np">NP Membership</option>
                         <option value="bronze">Bronze Membership</option>
@@ -108,8 +109,8 @@
 
                 <label for="description">
                     Business or organization description
-                    <textarea id="description" name="description"
-                        title="Describe your business or organization"></textarea>
+                    <textarea id="description" name="description" title="Describe your business or organization"
+                        autocomplete="off"></textarea>
                 </label>
 
                 <input type="hidden" name="timestamp" id="timestamp">
