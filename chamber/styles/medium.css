@@ -1,0 +1,15 @@
+@media (min-width: 641px) {
+    .place-card {
+        display: grid;
+        grid-template-columns: 300px minmax(0, 1fr);
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph location"
+            "photograph learn-more";
+    }
+
+    .place-card img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+}
