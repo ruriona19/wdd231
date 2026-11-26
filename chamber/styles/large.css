@@ -65,3 +65,24 @@
         align-items: start;
     }
 }
+
+@media (min-width: 1025px) {
+    #place-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .place-card {
+        display: grid;
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "location location"
+            "learn-more learn-more";
+    }
+
+    .place-card h2 {
+        text-align: left;
+    }
+}
